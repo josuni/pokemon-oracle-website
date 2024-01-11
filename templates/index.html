@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWant to know your spirit pokemon?</title>
+    <!-- Add your CSS styles here if needed -->
+</head>
+<body>
+
+    <h1>Want to know your spirit pokemon?</h1>
+
+    <p>Enter your name and birthday to find out...</p>
+
+    <form method="POST" action="/result">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="birthday">Birthday (MM/DD):</label>
+        <input type="text" id="birthday" name="birthday" placeholder="Enter your birthday (MM/DD)" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>{{ result_text }}</h2>
+
+</body>
+</html>
