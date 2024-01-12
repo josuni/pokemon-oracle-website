@@ -4,26 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NWant to know your spirit pokemon?</title>
-    <!-- Add your CSS styles here if needed -->
+    <title>Want to know your spirit pokemon?</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <h1>Want to know your spirit pokemon?</h1>
+    <header>
+        <h1>Want to know your spirit pokemon?</h1>
+    </header>
 
-    <p>Enter your name and birthday to find out...</p>
+    <main>
+        <h3>Enter your name and birthday to find out...</h3>
 
-    <form method="POST" action="/result">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <form method="POST" action="/result">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <label for="birthday">Birthday (MM/DD):</label>
-        <input type="text" id="birthday" name="birthday" placeholder="Enter your birthday (MM/DD)" required>
+            <label for="birthday">Birthday (MM/DD):</label>
+            <input type="text" id="birthday" name="birthday" placeholder="Enter your birthday (MM/DD)" required>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+        </form>
 
-    <h2>{{ result_text }}</h2>
+        <h2>{{ result_text }}</h2>
+    </main>
+
+    <footer>
+        Work in Progress
+    </footer>
 
 </body>
 </html>

@@ -1,6 +1,71 @@
-h1 {
-    border: 2px #eee solid;
-    color: brown;
-    text-align: center;
+/* styles.css */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: darkblue;
+    background-color: rgb(181, 175, 255);
+    font-family: 'Arial', sans-serif;
+
+    margin: 0;
+}
+
+header {
+    background-color: darkblue;
+    color: rgb(235, 227, 255);
     padding: 10px;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(235, 227, 255);
+
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-bottom: 5vh;
+    
+    border: 3px solid darkblue;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: darkblue;
+    color: lavender;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+
+}
+
+footer {
+    background-color: darkblue;
+    color: rgb(235, 227, 255);
+    padding: 20px;
+    text-align: center;
 }
