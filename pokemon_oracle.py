@@ -5,7 +5,7 @@ from datetime import datetime
 class PokemonOracle:
 
     def __init__(self):
-        self.pokedex_url = 'https://pokeapi.co/api/v2/pokedex/1/'
+        self.pokedex_url = 'https://pokeapi.co/api/v2/pokedex/1/' #national pokedex is used
         self.pokemon_entry_url_prefix = 'https://pokeapi.co/api/v2/pokemon/'
         self.pokedex = None
         self.total_num_pokemon = 0
@@ -48,10 +48,11 @@ class PokemonOracle:
         self.load_pokedex()
 
         pokemon_entry_num = self.hash_to_pokemon(name, birthday, self.total_num_pokemon)
-        
-        pokemon_data = self.load_pokemon_entry(pokemon_entry_num)
 
-        return pokemon_data['name']
+        pokemon_data = self.load_pokemon_entry(pokemon_entry_num)
+        pokemon_name, pokemon_image_url = pokemon_data['name'], pokemon_data['sprites']['front_default']
+        
+        return pokemon_name, pokemon_image_url
 
 #example use and test code
 if __name__ == "__main__":

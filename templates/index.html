@@ -22,12 +22,15 @@
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
             <label for="birthday">Birthday (MM/DD):</label>
-            <input type="text" id="birthday" name="birthday" placeholder="Enter your birthday (MM/DD)" required>
+            <input type="text" id="birthday" name="birthday" placeholder="Enter your birthday" required>
 
             <button type="submit">Submit</button>
         </form>
 
         <h2>{{ result_text }}</h2>
+
+        <img src="{{ pokemon_image }}" alt="{{ pokemon_image_alt_text }}">
+        
     </main>
 
     <footer>

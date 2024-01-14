@@ -51,7 +51,8 @@ input {
 
 button {
     padding: 10px 20px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
     background-color: darkblue;
     color: lavender;
     border: none;
@@ -60,7 +61,16 @@ button {
 }
 
 h2 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
 
+img {
+    max-width: 192px;
+    height: auto;
+    width: 100%;
+    image-rendering: pixelated; 
+    margin-bottom: 5px;
 }
 
 footer {
