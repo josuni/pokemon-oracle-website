@@ -36,8 +36,8 @@ class PokemonOracle:
 
     #hashes name + birthday string to bucket, number of buckets = length of pokedex
     def hash_to_pokemon(self, name, birthday, total_num_pokemon):
-        str_to_hash = name + str(birthday)
-        hash_value = sum(ord(char) for char in str_to_hash)
+        str_for_hashing = name + str(birthday)
+        hash_value = sum(ord(char) for char in str_for_hashing)
         pokemon_entry = hash_value % total_num_pokemon
         
         return pokemon_entry
